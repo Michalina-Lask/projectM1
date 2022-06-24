@@ -1,14 +1,8 @@
-
-var input = document.querySelector('title')
-var nameElem = document.querySelector('.text')
-var color = document.querySelector(".form")
+var textColor = document.querySelector('.js-text-color')
+//var color = document.querySelector(".form")
 var body = document.querySelector("body")
+body.style.color = "green"
 
-color.addEventListener('keyup',function(event){
-body.style.backgroundColor= event.target.value
-})
-
-function callback(event) {
-  nameElem.innerText = event.target.value
-}
-input.addEventListener('keyup', callback)
+textColor.addEventListener('keyup', function(event) {
+body.style.color = event.target.value
+});
